@@ -3,7 +3,7 @@ var router = express.Router();
 var cron = require('cron');
 var request = require('request');
 
-var cronJob = cron.job('0 * * * * *', function(){
+var cronJob = cron.job("0 */10 * * * *", function(){
   console.log("inizio");
     request.get('http://localhost:3000/', function (error, response, body) {
 
