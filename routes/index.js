@@ -5,7 +5,7 @@ var request = require('request');
 global.a = 0;
 
 
-var cronJob = cron.job('* * * * * *', function(){
+var cronJob = cron.job("0 */10 * * * *", function(){
   console.log("inizio");
     request.get('https://wsserverget.herokuapp.com', function (error, response, body) {
 
