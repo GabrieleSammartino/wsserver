@@ -7,7 +7,7 @@ global.a = 0;
 
 var cronJob = cron.job('* * * * * *', function(){
   console.log("inizio");
-    request.get('http://localhost:3000/', function (error, response, body) {
+    request.get('https://wsserverget.herokuapp.com', function (error, response, body) {
 
     });
     router.get('/', function(req, res) {
